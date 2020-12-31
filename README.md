@@ -1,24 +1,18 @@
-## Introduction
+## Introduction (Round 0)
 
+<br>
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b>Engineering
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab. | <b> Dynamics of Machine
+<b> Experiment|     <b> 9. Rim type flywheel
 
-### About the Experiment 
+<h5> About the Experiment : </h5>
 
-Fill a brief description of this experiment here
-
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> K V Gangadharan
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b> National Institute of Technology Karnataka, Surathkal
+<b> Email id|   <b> kvganga@nitk.ac.in
+<b> Department | <b> Mechanical Engineering
 
-### Contributors List
-
-SrNo | Name | Faculty or Student | Department| Institute | Email id
-:--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+#### Contributors List

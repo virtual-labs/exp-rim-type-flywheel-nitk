@@ -1,1 +1,1 @@
-## Experiment name
+## Rim Type Flywheel
