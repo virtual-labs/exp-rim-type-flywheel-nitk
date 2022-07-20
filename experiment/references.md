@@ -7,17 +7,16 @@
     <td>
     <ol>
     <li>R L Norton- Design of Machinery_ An Introduction to the Synthesis and Analysis of Mechanisms and Machines</li>
-    <li>Theory-of-Machines-14th-ed-Khurmi-2005 (2)</li>
     <li><a href="https://nptel.ac.in/course.html">NPTEL, Basic course(Sem 1 and 2), Engineering Physics</a></li>
     </ol>
    </td>
     <td>Developer : Dr. K V Gangadharan | NITK</br></br>
     Contributors :
     <ul style="list-style-type: none;">
-    <li>Akshaya| NITK</li>
     <li>Nishan B Shetty | NITK</li>
     <li>Rohit Kushawa | NITK</li>
     <li>Vishwas | NITK</li>
+    <li>Akshaya| NITK</li>
     <li>Anusha B Salian | NITK</li>
     <li>Tejas Pethker | NITK</li>
     <li>Rohit Rajpal | NITK</li>
@@ -32,6 +31,3 @@
      </ul></td>
   </tr>
 </table>
- 
-
-
