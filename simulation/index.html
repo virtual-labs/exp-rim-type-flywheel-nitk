@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE - DOM - Rim Type Flywheel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js"
+    ></script>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+    <script type="text/javascript" src= "js/jquery.min.js"></script>
+    <script type="text/javascript" src= "js/jquery-ui.min.js"></script>
+    <script type="application/json" src='js/jquery.min.map'></script>
+    <script type="text/javascript" src= "js/MOMscript.js"></script>
+  </head>
+  <body onload="varinit();startsim();">
+    <!-- Logo -->
+    <!-- Experiment Title -->
+    <!-- Tools Sections -->
+    <!-- Tools Container -->
+    <!-- Simulation Container -->
+    <div class="title-div-container">
+      <div class="title-div">
+        <div class="logo-div">
+          <a href="#"><img src="images/logo_nitk.png" alt="Logo" class="logo" /></a>
+        </div>
+        <h1>Rim Type Flywheel</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="tool-menu">
+          <li class="tool-list">
+            <a href="#simulation" class="tool-link" title="Simulation"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#089B93"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z"
+                />
+              </svg>
+            </a>
+            <span>Simulation</span>
+          </li>
+          <li class="tool-list">
+            <a href="#variables" class="tool-link" title="Variables"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffffff"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#089B93"
+                class="icons"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.745 3A23.933 23.933 0 003 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 011.105.402l2.402 7.206a.75.75 0 001.104.401l1.445-.889m-8.25.75l.213.09a1.687 1.687 0 002.062-.617l4.45-6.676a1.688 1.688 0 012.062-.618l.213.09"
+                />
+              </svg></a
+              >
+              <span>Variables</span>
+          </li>
+          <li class="tool-list">
+            <img id="playpausebutton" onclick="simstate()" src="images/blueplaydull.svg" alt="" class="icons" title="Play/Pause"/>
+            <span class="playPause">Play</span>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title">Simulation</h3>
+            <div class="canvas__div">
+              <div id="canvas-container">
+                <canvas id="simscreen" height="400px" width="550px"></canvas>
+              </div>
+              <div id="commentboxleft">
+                <p id='const1' onmouseover='showTitle(this);'>M = <span class="colorClass" id="v1" ></span></p>
+                <p id='const2' onmouseover='showTitle(this);'>n1 = <span class="colorClass" id="v2">17 revolutions</span></p>
+                <p id='const3' onmouseover='showTitle(this);'>r = <span class="colorClass" id="v3">0.01898m</span></p>
+                <p id='const4' onmouseover='showTitle(this);'>T<sub>f</sub> = <span class="colorClass" id="v4">9.31*10<sup>-3</sup>Nm</span></p>
+              </div>
+              <p id="calculation" style="position: relative; display: none;" >Calculation</p>
+              <div id="textarea0" style="position: relative; display: none;" ></div>
+              <p id="result" style="position: relative; display: none;">Result </p>
+              <div id="textarea1" style="position: relative; display: none;"></div>
+              <p id="speedText"></p>
+            </div>
+          </div>
+          <div id="variables" class="main__task-div">
+            <div class="settings-sections">
+              <h3 class="task-title">Variables</h3>
+              <div class="variables-sections">
+                <div class="variable">
+                  <div class="varname"><p class="text" title="Radius of flywheel">R</p>
+                    <input id="rspinner" title="Radius of flywheel" type="number"></input></div>
+                    <span class="unit">cm</span>
+                    <div id="rslider"title="Radius of flywheel"></div>
+                  </div>
+                  <div id = "mass" class="variable">
+                    <div class="varname"><p class="text" title="Mass of bob">m</p>
+                      <input id="mspinner" title="Mass of bob" type="number"></input>
+                    </div>
+                    <span class="unit">kg</span>
+                    <div id="mslider" title="Mass of bob"></div>
+                  </div>
+                  <div class="variable" id="moiDiv1" style="display:none">Theoritical Moment of Inertia:
+                    &nbsp;&nbsp;&nbsp;<input type="number" id="momentofinertia1"  autocomplete="off" min=0.1 max=1 step=0.010>
+                    <span class="unit1">kgm<sup>2</sup></span> </br></br>
+                    Experimental Moment of Inertia:
+                    &nbsp;&nbsp;&nbsp;<input type="number" id="momentofinertia2"  autocomplete="off" min=0.1 max=1 step=0.010>
+                    <span class="unit1">kgm<sup>2</sup></span></br></br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="err1" type="submit" onclick="perror();">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main__task-div footer ">
+              <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="../assets/js/iframeResize.js"></script></body>
+</html>
