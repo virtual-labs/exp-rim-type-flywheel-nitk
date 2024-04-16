@@ -1,15 +1,14 @@
-#### These procedure steps will be followed on the simulator
+### Procedure
 
-1. In the simulation window the experimental setup of the rim type flywheel with a string attached to the axle with mass is shown in the front and side view.<br>
-   ![alt text](images/rim1.png)<br>
+<div style="text-align:left">
+  Click on the Simulation icon    <img src="images/simulation.png" alt="Alt text" style="height:80px; width:80px;">  to view the simulation screen. 
 
-2. There are sliders given on right side of the screen for choosing the values of input variables, viz., radius if the disc type flywheel (R) and mass of the metal bob (m). There is a play/pause button under control tab for starting the experiment. The information about the experiment is given under the experimental setup.<br>
-   ![alt text](images/rim2.png)<br>
+  ![Alt text](images/Simscreen1.png)
+   
+   In order to view the variable section click on the Variable icon. <img src="images/var1.png" alt="Alt text" style="height:80px; width:80px;">
 
-3. After initiating the simulation with the help of the play button under the control tab, two option will come under the variable tab to enter the value of experimental and theoretical value of moment of inertia. Under calculation column the time required for bob to touch the ground(t), angular velocity of flywheel at the instant when the mass touches the ground(ω), number of rotations made by the flywheel after the string has left the axle (n2) is shown.<br>
-   ![alt text](images/rim3.png)<br>
+   ![Alt text](images/var2.png)
 
-4. Click on submit to submit button under the variable tab and the correct results will display under the results column with the percentage of error made by the user in calculations.<br>
-   ![alt text](images/rim4.png)<br>
-
-5. Compare analytically calculated results and the error in the result with the simulation results, displayed in the bottom of the simulator page.<br>
+   Click on Play icon <img src="images/play1.png" alt="Alt text" style="height:80px; width:80px;"> to run the simulation and click on Pause icon <img src="images/pause.png" alt="Alt text" style="height:80px; width:80px;"> to stop it.
+   
+</div>

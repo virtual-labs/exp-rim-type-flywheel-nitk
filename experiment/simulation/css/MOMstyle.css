@@ -348,10 +348,13 @@ div#controls
 	color:black;
 }
 .blink{
-	-webkit-animation: 0.5s linear 10 blink_effect; // for Safari 4.0 - 8.0
+	-webkit-animation: 0.5s linear 10 blink_effect; 
   animation: 0.5s linear 10 blink_effect;
 }
-@-webkit-keyframes blink_effect { // for Safari 4.0 - 8.0
+/* for Safari 4.0 - 8.0 */
+
+/* // for Safari 4.0 - 8.0 */
+@-webkit-keyframes blink_effect { 
   0% {
     visibility: hidden;
   }
